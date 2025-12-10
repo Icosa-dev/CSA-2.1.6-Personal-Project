@@ -24,6 +24,8 @@ public class Database {
      * 
      * @param dbName Name of the database file excluding the .cvs file extention.
      * @param verboseOutput True to enable verbose logging; false for normal output.
+     * 
+     * @since 1.0
      */
     Database(String dbName, boolean enableVerboseOutput)
     {
@@ -55,16 +57,37 @@ public class Database {
     private static final String ANSI_GREEN = "\u001B[32m";
     private static final String ANSI_YELLOW = "\u001B[33m";
 
+    /**
+     * Logs a successful action.
+     * 
+     * @param msg The message to log.
+     * 
+     * @since 1.0 
+     */
     private void logSuccess(String msg) {
         if (verboseOutput)
             System.out.println("[" + ANSI_GREEN + "SUCCESS" + ANSI_RESET + "] " + msg);
     }
 
+    /**
+     * Logs information.
+     * 
+     * @param msg The message to log.
+     * 
+     * @since 1.0
+     */
     private void logInfo(String msg) {
         if (verboseOutput) 
             System.out.println("[" + ANSI_YELLOW + "INFO" + ANSI_RESET + "] " + msg);
     }
 
+    /**
+     * Logs an error.
+     * 
+     * @param msg The message to log.
+     * 
+     * @since 1.0
+     */
     private void logError(String msg) {
         if (verboseOutput)
             System.err.println("[" + ANSI_RED + "ERROR" + ANSI_RESET + "] " + msg);
