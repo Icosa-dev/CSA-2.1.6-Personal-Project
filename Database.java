@@ -15,6 +15,7 @@ import java.io.File;
  */
 public class Database {
     // Private Attributes
+    @SuppressWarnings("unused")
     private File dbFile;
     private boolean verboseOutput;
 
