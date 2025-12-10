@@ -39,10 +39,11 @@ public class Database {
     /**
      * Creates a key in the database file or, if exists, will updated the existing key.
      * 
-     * @param key The name of the key to create.
-     * @param val The double value to assign to the key.
+     * @param key The name of the key to create
+     * @param val The double value to assign to the key
+     * @throws DatabaseException If 
      */
-    public void create(String key, double val) { }
+    public void create(String key, double val) throws DatabaseException { }
     
     // Private Methods
 
@@ -60,7 +61,7 @@ public class Database {
     /**
      * Logs a successful action.
      * 
-     * @param msg The message to log.
+     * @param msg The message to log
      * 
      * @since 1.0 
      */
@@ -72,7 +73,7 @@ public class Database {
     /**
      * Logs information.
      * 
-     * @param msg The message to log.
+     * @param msg The message to log
      * 
      * @since 1.0
      */
@@ -84,7 +85,7 @@ public class Database {
     /**
      * Logs an error.
      * 
-     * @param msg The message to log.
+     * @param msg The message to log
      * 
      * @since 1.0
      */
