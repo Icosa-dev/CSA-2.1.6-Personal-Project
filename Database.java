@@ -37,14 +37,49 @@ public class Database {
     }
 
     /**
-     * Creates a key in the database file or, if exists, will updated the existing key.
+     * Creates a key in the database file, or updates it if it already exists.
      * 
      * @param key The name of the key to create
-     * @param val The double value to assign to the key
-     * @throws DatabaseException If 
+     * @param value The double value to assign to the key
+     * @throws DatabaseException If the key could not be created
+     * 
+     * @since 1.0
      */
-    public void create(String key, double val) throws DatabaseException { }
-    
+    public void create(String key, double value) throws DatabaseException { }
+
+    /**
+     * Reads the value of a key in the database file.
+     * 
+     * @param key The name of the key to read
+     * @return The double value assigned to the key in the database file
+     * @throws DatabaseException If the key could not be read
+     * 
+     * @since 1.0
+     */
+    public double read(String key) throws DatabaseException { return 0.0; }
+
+    /**
+     * Updates an existing key in the database file with a new value. 
+     * 
+     * @param key The name of the key to update
+     * @param value The new double value to assign to the key
+     * @throws DatabaseException If the key could not be updated
+     * 
+     * @since 1.0
+     */
+    public void update(String key, double value) throws DatabaseException { }
+
+    /**
+     * Deletes an existing key from the database file.
+     * 
+     * @param key The name of the key to delete
+     * @throws DatabaseException If the key could not be delete
+     * 
+     * @since 1.0 
+     */
+    public void delete(String key) throws DatabaseException { }
+
+
     // Private Methods
 
     // Logger methods
