@@ -28,7 +28,7 @@ public class DatabaseException extends Exception {
      * The cause is not initialized and may subsequently be initialized by a call to
      * {@link #initCause(Throwable)}.
      * 
-     * @param msg The detail message.
+     * @param msg The detail message
      * 
      * @since 1.0 
      */
@@ -39,8 +39,8 @@ public class DatabaseException extends Exception {
     /**
      * Constructs a new {@code DatabaseException} with the specified detail message and cause.
      * 
-     * @param msg The detail message.
-     * @param cause The exception cause.
+     * @param msg The detail message
+     * @param cause The exception cause
      */
     public DatabaseException(String msg, Throwable cause) {
         super(msg, cause);
