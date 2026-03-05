@@ -1,9 +1,3 @@
-/*
- * SDPX-License-Identifer: BSD-2-Clause
- *
- * Copyright (c) 2025, LJC
- */
-
 import java.io.File;
 
 /**
