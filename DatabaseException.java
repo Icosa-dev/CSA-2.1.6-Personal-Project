@@ -1,9 +1,3 @@
-/*
- * SPDX-License-Identifier: BSD-2-Clause
- *
- * Copyright (c) 2025, LJC
- */
-
 /**
  * Exception class for errors thrown by public methods of the Database class.
  * 
