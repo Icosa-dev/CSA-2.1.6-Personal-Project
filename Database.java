@@ -1,5 +1,5 @@
 /*
- * SPDX-License-Identifier: BSD-2-Clause
+ * SPDX-License-Identifier: MIT
  *
  * Copyright (c) 2025, LJC
  */
